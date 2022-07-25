@@ -12,8 +12,6 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      //setLoading(true);
-
       if (query.length > 3) {
         setLoading(true)
         const result = await axios(
@@ -34,7 +32,7 @@ function App() {
     <div className="container">
       <Header />
       <Search getQuery={(q) => setQuery(q)} />
-      <Results results={results} loading={loading} query={query} />
+      <Results results={results} loading={loading} />
     </div>
   )
 }

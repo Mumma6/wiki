@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function Results({ results, loading, query }) {
+export default function Results({ results, loading }) {
   return loading ? (
     <p>Loading...</p>
   ) : results.length ? (
