@@ -1,13 +1,13 @@
-import React from "react";
-import { useState } from "react";
+import React from "react"
+import { useState } from "react"
 
 export default function Search({ getQuery }) {
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState("")
 
   const handleSearch = (q) => {
-    setSearchTerm(q);
-    getQuery(q);
-  };
+    setSearchTerm(q)
+    getQuery(q)
+  }
 
   return (
     <section>
@@ -18,5 +18,5 @@ export default function Search({ getQuery }) {
         onChange={(e) => handleSearch(e.target.value)}
       />
     </section>
-  );
+  )
 }
